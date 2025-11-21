@@ -1,0 +1,23 @@
+From 4231e4bf8d37b778f420573dbf07df03a4749725 Mon Sep 17 00:00:00 2001
+From: Christopher Kappelmann <christopher.kappelmann@gmail.com>
+Date: Fri, 21 Nov 2025 09:02:33 -0600
+Subject: [PATCH] Modified Makefile for only misc and scull
+
+---
+ Makefile | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index 7b08c49..c4f2e2e 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,8 +1,5 @@
+ 
+-SUBDIRS =  misc-progs misc-modules \
+-           skull scull scullc scullp lddbus sculld scullv shortprint simple tty \
+-	   pci usb\
+-	   sbull snull short
++SUBDIRS =  misc-modules
+ 
+ all: subdirs
+ 
